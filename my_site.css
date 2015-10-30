@@ -1,0 +1,61 @@
+body{
+  background: url(linux2.jpg)  ;
+  margin: 0;
+  padding: 0;
+}
+/*h1{
+  border: 100px;
+  color: yellow;
+}*/
+div {
+  width:640px;
+  height:480px;
+  margin:auto;
+  position:relative;
+  overflow:hidden;
+  border-radius:15em/1.2em;
+  /*border:solid  #7CAB00;*/
+  box-shadow:0 0 5px;
+}
+div img {
+  position:absolute;
+  top:0;
+  left:0;
+  transition:1s;
+  vertical-align:bottom;
+}
+div img:nth-child(even) {
+  left:100%;
+}
+div img:nth-child(2n+3) {
+  left:-100%;
+}
+div img:focus + img {
+  left:0;
+  transition:1s;
+  box-shadow:0 0 50px 100px #7CAB00;
+}
+
+/* make it responsive ? */
+div , img {max-width:100%;height:auto;}
+img:first-child {position:static;}
+
+html {
+  min-height:100%;
+
+ text-align:center;
+
+
+}h1 span{line-height:0;
+  border-bottom:4px solid #159;
+  box-shadow: 0 0 3px 20px #7CAB00;
+  border-radius:100%;
+  display:block;
+text-shadow:0 0 5px white,0 0 5px white,0 0 5px white,0 0 5px white,0 0 5px white,0 0 5px white,0 0 5px white,0 0 5px white,0 0 5px white,0 0 5px white;
+ }
+h1{padding:0.7em;
+position:relative;
+top:2em;
+z-index:1;
+  width:610px;
+margin: 0.7em auto}
